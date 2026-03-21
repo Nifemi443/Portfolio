@@ -172,7 +172,7 @@ sections.forEach(section => sectionObserver.observe(section));
    simulating a terminal cursor typing in real time.
 
  */
-const roleText = 'Frontend Developer';
+const roleText = 'Full Stack Developer';
 
 /* Clear any existing content (there's none, but good practice) */
 roleEl.textContent = '';
