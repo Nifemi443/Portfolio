@@ -58,7 +58,7 @@ export default function Nav() {
           href="#home"
           className="hidden rounded-full py-1.5 pr-1 text-[0.65rem] font-bold tracking-tight text-ink sm:block"
         >
-          oluwanifemi
+         nifemi.
         </a>
 
         <span className="hidden h-3 w-px bg-line sm:block" aria-hidden="true" />
