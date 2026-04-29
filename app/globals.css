@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f4ef;
+  --ink: #0f0d0b;
+  --muted: #665f57;
+  --accent: #1a6b4a;
+  --line: rgba(15, 13, 11, 0.14);
+  --surface: rgba(255, 255, 255, 0.42);
+  --surface-alt: #fbf8f3;
+  --section: #141210;
+  --section-text: #f7f4ef;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --background: #11100e;
+  --ink: #f4efe7;
+  --muted: #b8afa5;
+  --accent: #6fb58e;
+  --line: rgba(247, 244, 239, 0.14);
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-alt: #171512;
+  --section: #070706;
+  --section-text: #f7f4ef;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+a,
+button,
+input,
+textarea {
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+.section-shell {
+  padding: 7rem 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .section-shell {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.section-inner {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.section-kicker::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+}
+
+.serif {
+  font-family: var(--font-instrument-serif), serif;
+}
+
+.mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.mesh-gradient {
+  background:
+    radial-gradient(circle at 75% 10%, rgba(126, 201, 255, 0.62), transparent 28%),
+    radial-gradient(circle at 95% 18%, rgba(255, 178, 205, 0.52), transparent 25%),
+    radial-gradient(circle at 72% 44%, rgba(167, 231, 194, 0.46), transparent 30%);
+  filter: blur(96px);
+}
+
+.marquee-track {
+  animation: scroll 28s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
