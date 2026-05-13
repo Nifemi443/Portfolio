@@ -103,12 +103,6 @@ export default function Hero() {
             >
               Let&apos;s Talk
             </a>
-            <a
-              href="/cv.pdf"
-              className="rounded-full border border-ink/20 px-7 py-4 text-sm font-bold transition hover:border-accent hover:text-accent"
-            >
-              Download CV
-            </a>
           </motion.div>
         </motion.div>
 

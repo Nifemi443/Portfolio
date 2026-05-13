@@ -12,10 +12,10 @@ type ContactFormValues = {
 };
 
 const contactLinks = [
-  { label: "Email", href: "mailto:hello@ayo4dev.com" },
+  { label: "Email", href: "mailto:nifemidev@proton.me" },
   { label: "X/Twitter", href: "https://x.com/ayo4dev" },
   { label: "Instagram", href: "https://instagram.com/ayo4dev" },
-  { label: "GitHub", href: "https://github.com/ayo4dev" },
+  { label: "GitHub", href: "https://github.com/Nifemi443" },
 ];
 
 const fadeUp: Variants = {
