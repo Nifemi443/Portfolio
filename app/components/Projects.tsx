@@ -6,19 +6,19 @@ import type { Variants } from "framer-motion";
 const projects = [
   {
     name: "Quantum Financial System",
-    url: "",
+    url: "https://quantumreserve.tech/",
     type: "Client Work",
     description:
       "Premium digital asset wealth management platform with an internal token, five sovereign digital assets, crypto deposit rails abstracted behind wealth management language, and a bespoke design system.",
     stack: ["Next.js", "TypeScript", "Supabase", "Inngest", "Web3"],
   },
   {
-    name: "SellBetter",
-    url: "#contact",
+    name: "Knova Learn",
+    url: "https://knovalearn.com/",
     type: "Own Venture",
     description:
-      "AI-powered Instagram audit and WhatsApp coaching tool for Nigerian small businesses, turning social presence into actionable sales strategy for fashion and beauty brands.",
-    stack: ["Next.js", "OpenAI API", "WhatsApp Business API", "Supabase"],
+      "AI-narrated micro-courses for Nigerian tech builders. Learn by building real products, not toy examples.",
+    stack: ["Next.js", "TypeScript", "Supabase", "Claude API", "Inngest", "Vercel"],
   },
   {
     name: "Omni",
